@@ -19,23 +19,23 @@
 // | L1  |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ENTER  |
 //                    | LALT | LGUI | LSHFT |   | SPACE | L1  | L2 |
                         bindings = <
-   &kp ESC &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &kp TAB &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &mo 1 &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RET
-                  &kp LALT &kp LGUI &kp LSHFT   &kp SPACE &mo 1 &mo 2
+   &kp ESC &kp Q &kp W &kp E &kp R &kp T    &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
+   &kp TAB &kp A &kp S &kp D &kp F &kp G    &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+   &mo 1 &kp Z &kp X &kp C &kp V &kp B      &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RET
+              &kp LALT &kp LGUI &kp LSHFT   &kp SPACE &mo 1 &mo 2
                         >;
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  0 |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  -  | = |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   |    |    |     |    |    |  UP   |       |
+// | BTCLR| BT1 | BT2 | BT3 | BT4 |  |   |    |    |     |    |    |  UP   |       |
 // | L1  |     |     |     |     |     |   |     |     |     |  LFT   |  DWN   |  RGT    |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp N0    &kp N1       &kp N2       &kp N3       &kp N4   &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp MINUS &kp EQUAL
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &trans &trans &trans &trans &kp UP &trans
-   &mo 1  &trans       &trans       &trans       &trans     &trans       &trans   &trans   &trans &LEFT &kp DOWN &kp RIGHT
-                          	        &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
+   &kp N0  &kp N1 &kp N2  &kp N3 &kp N4   &kp N5                                  &kp N6   &kp N7 &kp N8 &kp N9 &kp MINUS &kp EQUAL
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &trans &trans &trans &trans   &kp UP      &trans
+   &mo 1  &trans  &trans       &trans       &trans     &trans       &trans        &trans   &trans     &kp LEFT &kp DOWN &kp RIGHT
+                          	        &kp LGUI     &trans       &kp SPACE       &kp RET  &trans   &kp RALT
                         >;
                 };
 
