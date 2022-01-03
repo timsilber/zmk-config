@@ -27,15 +27,15 @@
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  1 |  2  |  3  |  4  |  5  |  6  |          |  7  |  8  |  9  |  0  |  -  | = |
-// |     |     |     |     |     |    |          |  [  |  ]   |    |      |   UP   |       |
-// | L1  |     |     |     |     |     |         |     |     |  LFT   |  DWN   |  RGT    |
-//                    | GUI |     | SHFT |       | SPACE |     |       |
+// |  1 |  2  |  3  |  4  |  5  |  6  |   |  7  |  8  |  9  |  0  |  -  | = |
+// |     |     |     |     |     |  |   |    |    |     |    |    |  UP   |       |
+// | L1  |     |     |     |     |     |   |     |     |     |  LFT   |  DWN   |  RGT    |
+//                    | GUI |     | SHFT |   | SPACE |     |       |
                         bindings = <
-   &kp N1 &kp N2  &kp N3 &kp N4   &kp N5 &kp N6               &kp N7 &kp N8 &kp N9 &kp N0 &kp MINUS &kp EQUAL
-   &trans &trans &trans &trans &trans &trans                  &kp LEFT_BRACKET &kp RIGHT_BRACKET &trans &trans &kp UP      &trans
-   &mo 1  &trans  &trans  &trans  &trans &trans               &trans trans &trans     &kp LEFT &kp DOWN &kp RIGHT
-                     &kp LALT &kp LGUI &kp LSHFT              &kp SPACE &mo 1 &mo 2
+   &kp N1 &kp N2  &kp N3 &kp N4   &kp N5 &kp N6                                    &kp N7 &kp N8 &kp N9 &kp N0 &kp MINUS &kp EQUAL
+   &trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans   &kp UP      &trans
+   &mo 1  &trans  &trans       &trans       &trans     &trans       &trans        &trans   &trans     &kp LEFT &kp DOWN &kp RIGHT
+                          	        &kp LGUI     &trans       &kp LSHFT       &kp SPACE  &trans   &trans
                         >;
                 };
 
@@ -47,9 +47,9 @@
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4      &kp MINUS &kp EQUAL &kp LBKT &kp RBKT &kp BSLH &kp GRAVE
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
    &mo 1 &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
-                    	    &kp LALT &kp LGUI &kp LSHFT              &kp SPACE &mo 1 &mo 2
+                    	     &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };
         };
